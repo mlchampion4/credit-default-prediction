@@ -1,0 +1,37 @@
+{
+  "model": "LGBMClassifier",
+  "version": "1.0",
+  "trained_at": "2026-10-13T00:08:06.048448",
+  "reason": "Лучший test ROC-AUC + почти минимальный gap + статистически не отличается от CatBoost и RandomForest",
+  "metrics": {
+    "train_roc_auc": 0.8152275863839834,
+    "test_roc_auc": 0.7653733524418604,
+    "gap": 0.04985423394212296,
+    "test_pr_auc": 0.49627893409735446,
+    "cv_roc_auc_mean": 0.7732895902509649,
+    "cv_roc_auc_std": 0.005351502230170583
+  },
+  "optimal_threshold": 0.43,
+  "hyperparams": {
+    "boosting_type": "gbdt",
+    "class_weight": "balanced",
+    "colsample_bytree": 0.7423037751345191,
+    "importance_type": "split",
+    "learning_rate": 0.008573284834129728,
+    "max_depth": 6,
+    "min_child_samples": 19,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 450,
+    "n_jobs": null,
+    "num_leaves": 29,
+    "objective": null,
+    "random_state": 42,
+    "reg_alpha": 0.0018604271097014996,
+    "reg_lambda": 0.7526859917125899,
+    "subsample": 0.8397151514472229,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 0,
+    "verbose": -1
+  }
+}
