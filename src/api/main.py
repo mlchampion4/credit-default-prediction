@@ -34,7 +34,6 @@ def _explain(X: pd.DataFrame, top_n: int = 3) -> list[dict]:
     shap_vals = _state['explainer'].shap_values(X)
     feature_names = _state['feature_names']
     sv = shap_vals[0]
-    print(X.columns.to_list())
     top_idx = np.argsort(np.abs(sv))[::-1][:top_n]
 
     factors = []
